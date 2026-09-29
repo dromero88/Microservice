@@ -1,0 +1,14 @@
+<Project ToolsVersion="15.0" Sdk="Microsoft.Docker.Sdk">
+  <PropertyGroup Label="Globals">
+    <ProjectVersion>2.1</ProjectVersion>
+    <DockerTargetOS>Linux</DockerTargetOS>
+    <DockerComposeProjectName>microservice</DockerComposeProjectName>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <DockerLaunchAction>LaunchBrowser</DockerLaunchAction>
+    <DockerServiceName>microservice-api</DockerServiceName>
+    <DockerServiceUrl>{Scheme}://{ServiceIPAddress}:{ServicePort}/swagger</DockerServiceUrl>
+    <DependencyAwareStart>true</DependencyAwareStart>
+  </PropertyGroup>
+</Project>
